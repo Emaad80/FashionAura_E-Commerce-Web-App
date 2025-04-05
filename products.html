@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="public\blue-shirt-logo.png" type="image/x-icon" />
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="public\fashion aura logo.png" alt="Fashion Aura Logo" />
+      </div>
+      <h1>Products</h1>
+      <nav>
+        <a href="index.html"><i class="fas fa-home"></i>Home</a>
+        <a href="products.html"><i class="fas fa-shopping-bag"></i>Products</a>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+      </nav>
+    </header>
+    <main>
+      <div class="products">
+        <div class="product">
+            <img src="public/men shirt.avif" alt="men's shirt" />
+            <h3>Men's Shirt</h3>
+          <p>Price: Rs299</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 30% OFF</p>
+          <p><strong>Type:</strong>Cotton</p>
+          <p>
+            <strong>Description:</strong>A lightweight cotton Shirt perfect for
+            summer.
+          </p>
+          <label for="size-shirt">Select Size:</label>
+          <select id="size-shirt">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button
+            onclick="addToCart('Mens Shirt', 299, 'public/men shirt.avif', document.getElementById('size-shirt').value)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/coat image.avif" alt="Coat for Men" />
+          <h3>Coat for Men</h3>
+          <p>Price: Rs5596</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 25% OFF</p>
+          <p><strong>Type:</strong>Polyster</p>
+          <p>
+            <strong>Description:</strong>A lightweight Polyster coat perfect for
+            Events.
+          </p>
+          <label for="size-shirt">Select Size:</label>
+          <select id="size-coat">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button
+            onclick="addToCart('Coat for Men', 5596,'public/coat image.avif',document.getElementById('size-coat').value)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/hoodie.jpg" alt="Hanes Men's Hoodie" />
+          <h3>Hanes Men's Hoodie</h3>
+          <p>Price: Rs249</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 10% OFF</p>
+          <p><strong>Type:</strong>Polyster Fabric</p>
+          <p>
+            <strong>Description:</strong>A Polyster Fabric hoodie is suitable
+            for casual and formal wear.
+          </p>
+          <label for="size-shirt">Select Size:</label>
+          <select id="size-hoodie">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button
+            onclick="addToCart('Mens Hoodie', 249,'public/hoodie.jpg',document.getElementById('size-hoodie').value)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/T- shirt image.avif" alt="T-Shirt image" />
+          <h3>T-Shirts</h3>
+          <p>Price: Rs149</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 10% OFF</p>
+          <p><strong>Type:</strong>Fabric</p>
+          <p>
+            <strong>Description:</strong>A lightweight Fabric T-Shirt perfect
+            for summer.
+          </p>
+          <label for="size-T-shirt">Select Size:</label>
+          <select id="size-T-shirt">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button
+            onclick="addToCart('T-Shirts', 149,'public/T- Shirt image.avif',document.getElementById('size-T-shirt').value)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/pant image.jpg" alt="pant image" />
+          <h3>Men's Stretchable Pant</h3>
+          <p>Price: Rs269</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 15% OFF</p>
+          <p><strong>Type:</strong>soft and stretchable Fabric.</p>
+          <p><strong>Description:</strong>This can be wear on vacation.</p>
+          <label for="size-pant">Select Size:</label>
+          <select id="size-pant">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option></select
+          >,
+          <button
+            onclick="addToCart('stretchable Pant', 269,'public/pant image.jpg',document.getElementById('size-pant').value)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/jeans image.avif" alt="jeans pant image" />
+          <h3>Men's Jeans</h3>
+          <p>Price: Rs499</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <!-- Half star -->
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 12% OFF</p>
+          <p><strong>Type:</strong>Sturdy Denim Fabric.</p>
+          <p>
+            <strong>Description:</strong>Jeans are durable, versatile pants
+            suitable for casual outlings.
+          </p>
+          <label for="size-jeans pant">Select Size:</label>
+          <select id="size-jeans pant">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button
+            onclick="addToCart('Jeans pant', 499,'public/jeans image.avif',document.getElementById('size-jeans pant').value)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/casual pant.jpg" alt="Casual Pant" />
+          <h3>Casual Pant</h3>
+          <p>Price: Rs199</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <!-- Half star -->
+            <i class="far fa-star"></i>
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 10% OFF</p>
+          <p><strong>Type:</strong>Cotton</p>
+          <p>
+            <strong>Description:</strong>It is designed for everyday wear or
+            informal occasions, known for their comfortable fit and stylish.
+          </p>
+          <label for="size-Casual-Pant">Select Size:</label>
+          <select id="size-Casual-Pant">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button
+            onclick="addToCart('Casual pant', 199,'public/casual pant.jpg',document.getElementById('size-Casual-Pant').value)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/shoes image.avif" alt="casual shoes" />
+          <h3>Casual Shoes</h3>
+          <p>Price: Rs449</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 8% OFF</p>
+          <p><strong>Type:</strong>Leather</p>
+          <p>
+            <strong>Description:</strong>Casual Shoes are typically ideal for
+            everyday wear,offering comfort and style for relaxed settings.
+          </p>
+          <label for="size-shoes">Select Size:</label>
+          <select id="size-shoe">
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <button
+            onclick="addToCart('Casual Shoes', 449,'public/shoes image.avif',document.getElementById('size-shoe').value)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/belt image.avif" alt="Leather-Belt" />
+          <h3>Leather-Belt</h3>
+          <p>Price: Rs294</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 10% OFF</p>
+          <p><strong>Type:</strong>Leather</p>
+          <p>
+            <strong>Description:</strong>Perfect for holding up trousers or
+            adding a stylish accent to both casual and semi-formal outfits.
+          </p>
+          <button
+            onclick="addToCart('leather-belt', 294,'public/belt image.avif')"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/wallet image.avif" alt="Wallet" />
+          <h3>Wallet</h3>
+          <p>Price: Rs168</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 10% OFF</p>
+          <p><strong>Type:</strong>Leather</p>
+          <p>
+            <strong>Description:</strong>It is commonly used for carrying
+            cash,cards,and IDs, offering furability and style.
+          </p>
+          <button onclick="addToCart('Wallet', 168,'public/wallet image.avif')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/bed cover" alt="Soft Bed Cover" />
+          <h3>Soft Bed Cover</h3>
+          <p>Price: Rs379</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <!-- Half star -->
+            <i class="far fa-star"></i>
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 25% OFF</p>
+          <p><strong>Type:</strong>Cotton and Polyster-(both)</p>
+          <p>
+            <strong>Description:</strong>it provides warmth and comfort while
+            adding a decorative touch to the bedroom.
+          </p>
+          <button onclick="addToCart('Soft Bed Cover', 379,'public/bed cover')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/sony headphone" alt="Sony Headphone" />
+          <h3>Sony Headphone</h3>
+          <p>Price: Rs699</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 12% OFF</p>
+          <p><strong>Type:</strong>Metal</p>
+          <p>
+            <strong>Description:</strong>it is designed for personal audio
+            use,offering comfort and high-quality sound for various activities
+            like listening to music or gaming.
+          </p>
+          <button
+            onclick="addToCart('Sony Headphone', 699,'public/sony headphone')"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/handbag.jpg" alt="Ladies Hand Bag" />
+          <h3>Ladies Hand Bag</h3>
+          <p>Price: Rs199</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 15% OFF</p>
+          <p><strong>Type:</strong>Faux Leather</p>
+          <p>
+            <strong>Description:</strong>A versatile accessory for carring
+            essentials,suitable for casual,professional,or formal.
+          </p>
+          <button
+            onclick="addToCart('Ladies Hand Bag', 199,'public/handbag.jpg')"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/sunglass image.avif" alt="Sunglass" />
+          <h3>Sunglass</h3>
+          <p>Price: Rs159</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 5% OFF</p>
+          <p><strong>Type:</strong>Polycarbonate</p>
+          <p>
+            <strong>Description:</strong>Frames with UV-protection
+            lenses,perfect for outdoors activities and stylish sun protection.
+          </p>
+          <button
+            onclick="addToCart('Sunglass', 159,'public/sunglass image.avif')"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/books image.jpg" alt="Book of Fantasy" />
+          <h3>Book of Fantasy</h3>
+          <p>Price: Rs649</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <!-- Half star -->
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 8% OFF</p>
+          <p><strong>Type:</strong>Wove paper</p>
+          <p>
+            <strong>Description:</strong>Filled with Imaginative worlds and epic
+            adventure.
+          </p>
+          <button
+            onclick="addToCart('Book of Fantasy', 649,'public/books image.jpg')"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/slippers image.avif" alt="Slipper for men" />
+          <h3>Slipper for men</h3>
+          <p>Price: Rs234</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <!-- Half star -->
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 14% OFF</p>
+          <p><strong>Type:</strong>Synthetic Material.</p>
+          <p>
+            <strong>Description:</strong>Perfect for holding up trousers or
+            adding a stylish accent to both casual and semi-formal outfits.
+          </p>
+          <label for="size-slipper">Select Size:</label>
+          <select id="size-slipper">
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <button
+            onclick="addToCart('Slipper for men', 234,'public/slippers image.avif',document.getElementById('size-slipper').value)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/shoes image.avif" alt="Shoes" />
+          <h3>Shoes</h3>
+          <p>Price: Rs559</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <!-- Half star -->
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 7% OFF</p>
+          <p><strong>Type:</strong>Leather</p>
+          <p>
+            <strong>Description:</strong>Durable and trendy shoes for everyday
+            casual wear.
+          </p>
+          <label for="size-shoes">Select Size:</label>
+          <select id="size-shoes">
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <button
+            onclick="addToCart('Shoes', 559,'public/shoes image.avif',document.getElementById('size-shoes').value)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/watch image.avif" alt="Watch for Men" />
+          <h3>Watch for Men</h3>
+          <p>Price: Rs784</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <!-- Half star -->
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 8% OFF</p>
+          <p><strong>Type:</strong>Stainless Steel and Leather Strap.</p>
+          <p>
+            <strong>Description:</strong>Elegant and Functional Timepiece for
+            daily or formal use.
+          </p>
+          <button
+            onclick="addToCart('Watch for Men', 784,'public/watch image.avif')"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/heels image.avif" alt="Heels for Women" />
+          <h3>Heels for Women</h3>
+          <p>Price: Rs344</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <!-- Half star -->
+            <i class="far fa-star"></i>
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 15% OFF</p>
+          <p><strong>Type:</strong>Faux Leather.</p>
+          <p>
+            <strong>Description:</strong>Stylish and comfortable footwear for
+            parties or formal occasions..
+          </p>
+          <label for="size-heels">Select Size:</label>
+          <select id="size-heels">
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <button
+            onclick="addToCart('Heels for Women', 344,'public/heels image.avif',document.getElementById('size-heels').value)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/ladies boots image.avif" alt="boots for women" />
+          <h3>boots for women</h3>
+          <p>Price: Rs645</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <!-- Half star -->
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 12% OFF</p>
+          <p><strong>Type:</strong>Leather.</p>
+          <p>
+            <strong>Description:</strong>Durable and fashionable footwear for
+            casual or outdoor use.
+          </p>
+          <label for="size-boots">Select Size:</label>
+          <select id="size-boots">
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <button
+            onclick="addToCart('boots for women', 645,'public/ladies boots image.avif',document.getElementById('size-boots').value)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/school bag image.avif" alt="School bag" />
+          <h3>School Bag</h3>
+          <p>Price: Rs559</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 18% OFF</p>
+          <p><strong>Type:</strong>Polyster.</p>
+          <p>
+            <strong>Description:</strong>A Durable and spacious bag designed for
+            carry books, stationary and other school essentials.
+          </p>
+          <button
+            onclick="addToCart('School Bag', 559,'public/school bag image.avif')"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/hat image.avif" alt="Hat image" />
+          <h3>Hat</h3>
+          <p>Price: Rs284</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <!-- Half star -->
+            <i class="far fa-star"></i>
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 12% OFF</p>
+          <p><strong>Type:</strong>Cotton.</p>
+          <p>
+            <strong>Description:</strong>A Headwear item used for sun
+            protection,fashion.It can be worn for Casual outlinds.
+          </p>
+          <button onclick="addToCart('Hat', 284,'public/hat image.avif')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/car toy image.avif" alt="Car toy" />
+          <h3>Car Toy for Kids.</h3>
+          <p>Price: Rs34</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <!-- Half star -->
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 15% OFF</p>
+          <p><strong>Type:</strong>Plastic.</p>
+          <p>
+            <strong>Description:</strong>A smaal vehicle designed for children's
+            play or as a collectible.
+          </p>
+          <button
+            onclick="addToCart('Car Toy for Kids', 34,'public/car toy image.avif')"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="public/socks image.avif" alt="socks image" />
+          <h3>Socks</h3>
+          <p>Price: Rs179</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <!-- Offer -->
+          <p class="offer">🔥 5% OFF</p>
+          <p><strong>Type:</strong>Cotton.</p>
+          <p>
+            <strong>Description:</strong>A soft,flexible garment worn on the
+            feet,usually inside shoes, to provide comfort,warmth and prevent
+            friction..
+          </p>
+          <label for="socks-length">Select Length:</label>
+          <select id="socks-length">
+            <option value="Ankle">Ankle</option>
+            <option value="Crew">Crew</option>
+            <option value="knee High">Knee High</option>
+          </select>
+          <button
+            onclick="addToCart('Socks', 179,'public/socks image.avif',document.getElementById('socks-length').value)"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-black text-white mt-8 p-6">
+      <div class="copyright text-center mb-4">
+        <p><b>&copy; 2024 Fashion Aura. All Rights Reserved.</b></p>
+      </div>
+      <div class="footer-content grid grid-cols-1 md:grid-cols-4 gap-6">
+        <!-- Contact Info Section -->
+        <div class="contact-info">
+          <h4 class="text-lg font-semibold mb-2">Contact Us</h4>
+          <p>Phone: +123-456-7890</p>
+          <p>
+            <i class="fa-solid fa-envelope"></i> Email: fashionaura@gmail.com
+          </p>
+          <p>
+            <i class="fa-solid fa-location-pin"></i> Address: 123 Fashion St,
+            New York, NY 10001
+          </p>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="social-media">
+          <h4 class="text-lg font-semibold mb-2">Follow Us</h4>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                class="hover:text-blue-400"
+                ><i class="fa-brands fa-facebook"></i> Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                class="hover:text-white-100"
+                ><i class="fa-brands fa-x-twitter"></i> Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="hover:text-pink-400"
+                ><i class="fa-brands fa-instagram"></i> Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="quick-links">
+          <h4 class="text-lg font-semibold mb-2">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="/about" class="hover:text-blue-400">About Us</a></li>
+            <li><a href="/contact" class="hover:text-blue-400">Contact</a></li>
+            <li>
+              <a href="index.html" class="hover:text-blue-400"
+                ><i class="fas fa-home"></i> Home</a
+              >
+            </li>
+            <li>
+              <a href="products.html" class="hover:text-blue-400"
+                ><i class="fa-solid fa-cart-shopping"></i> Shop</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Customer Service Section -->
+        <div class="customer-service">
+          <h4 class="text-lg font-semibold mb-2">Customer Service</h4>
+          <ul class="space-y-2">
+            <li><a href="/faq" class="hover:text-blue-400">FAQ</a></li>
+            <li>
+              <a href="/returns" class="hover:text-blue-400"
+                >Returns & Exchanges</a
+              >
+            </li>
+            <li>
+              <a href="/track-order" class="hover:text-blue-400"
+                >Track Your Order</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

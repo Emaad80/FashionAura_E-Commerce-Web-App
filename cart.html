@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="public\blue-shirt-logo.png" type="image/x-icon">
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="public\fashion aura logo.png" alt="Fashion Aura Logo">
+        </div>
+        <h1>Products</h1>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i>Home</a>
+            <a href="products.html"><i class="fas fa-shopping-bag"></i>Products</a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+        </nav>
+    </header>
+    <main>
+        <div class="cart-container">
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items" class="cart-items">
+                <button class="remove-btn">Remove</button>
+            </div>
+            <div id="total" class="total"></div>
+            <button onclick="clearCart()" class="clear-cart-btn">Clear Cart</button>
+            <button onclick="placeOrder()" class="place-order-btn">Place Order</button> <!-- Added "Place Order" button -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
